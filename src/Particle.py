@@ -1,8 +1,9 @@
 import random
 class Particle(object):
     """docstring for Particle."""
-    def __init__(self, dimension):
+    def __init__(self, id, dimension):
         super(Particle, self).__init__()
+        self.id = id
         self.dimension = dimension
         self.velocity = [0] * dimension
         self.position = [0] * dimension
